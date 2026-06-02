@@ -14,10 +14,10 @@ Website MVP untuk menampilkan informasi lomba, menerima pendaftaran peserta/tim,
 ## 2. Akun Demo
 
 ```text
-URL admin : /login
-Email     : admin@kampus.test
-Password  : password
-Role      : admin
+URL admin : /....
+Email     : ....
+Password  : ....
+Role      : ....
 ```
 
 ## 3. Mind Map Arsitektur
@@ -67,12 +67,12 @@ CREATE DATABASE lomba_projek;
 Konfigurasi `.env` sudah diarahkan ke:
 
 ```env
-DB_CONNECTION=mysql
+DB_CONNECTION=...
 DB_HOST=127.0.0.1
-DB_PORT=3306
+DB_PORT=...
 DB_DATABASE=lomba_projek
-DB_USERNAME=root
-DB_PASSWORD=
+DB_USERNAME=...
+DB_PASSWORD=...
 ```
 
 ### Step 2 - Install Dependency
