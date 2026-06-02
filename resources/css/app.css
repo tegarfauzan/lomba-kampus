@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-brand-soft text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100;
+    }
+
+    ::selection {
+        @apply bg-brand-cream text-brand-maroon;
+    }
+}
+
+@layer components {
+    .page-shell {
+        @apply min-h-screen bg-brand-soft text-slate-900 dark:bg-slate-950 dark:text-slate-100;
+    }
+
+    .section-container {
+        @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+    }
+
+    .ui-card {
+        @apply rounded-2xl border border-white/70 bg-white/90 shadow-soft backdrop-blur transition-all duration-300 dark:border-white/10 dark:bg-slate-900/80;
+    }
+
+    .ui-card-hover {
+        @apply hover:-translate-y-1 hover:border-brand-red/40 hover:shadow-xl dark:hover:border-brand-cream/40;
+    }
+
+    .btn-primary {
+        @apply inline-flex items-center justify-center gap-2 rounded-full border border-brand-red bg-brand-red px-5 py-3 text-sm font-bold text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-maroon hover:bg-brand-maroon active:translate-y-0 dark:border-brand-cream dark:bg-brand-cream dark:text-brand-maroon dark:hover:border-white dark:hover:bg-white;
+    }
+
+    .btn-secondary {
+        @apply inline-flex items-center justify-center gap-2 rounded-full border border-brand-maroon/20 bg-white px-5 py-3 text-sm font-bold text-brand-maroon transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-red hover:text-brand-red active:translate-y-0 dark:border-white/15 dark:bg-slate-900 dark:text-brand-cream dark:hover:border-brand-cream dark:hover:text-white;
+    }
+
+    .btn-danger {
+        @apply inline-flex items-center justify-center gap-2 rounded-full border border-red-600 bg-red-600 px-4 py-2 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-red-800 hover:bg-red-800 active:translate-y-0;
+    }
+
+    .form-input {
+        @apply w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm transition-all duration-300 placeholder:text-slate-400 focus:border-brand-red focus:ring-brand-red dark:border-white/10 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-500;
+    }
+
+    .form-label {
+        @apply mb-2 block text-sm font-bold text-slate-700 dark:text-slate-200;
+    }
+
+    .badge {
+        @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-bold;
+    }
+
+    .admin-link {
+        @apply flex items-center rounded-2xl px-4 py-3 text-sm font-bold text-slate-600 transition-all duration-300 hover:bg-brand-cream/60 hover:text-brand-maroon dark:text-slate-300 dark:hover:bg-white/10 dark:hover:text-white;
+    }
+
+    .admin-link-active {
+        @apply bg-brand-maroon text-white shadow-soft dark:bg-brand-cream dark:text-brand-maroon;
+    }
+}
