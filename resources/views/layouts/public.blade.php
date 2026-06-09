@@ -19,7 +19,7 @@
         </script>
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:400,500,600,700,800&display=swap" rel="stylesheet" />
-        @vite(['build/assets/app-FnBGe-P1.css', 'build/assets/app-CpXTcIz4.js'])
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans">
         <div class="page-shell">
