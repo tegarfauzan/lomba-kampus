@@ -15,7 +15,7 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:400,500,600,700,800&display=swap" rel="stylesheet" />
 
-        @vite(['public/build/assets/app-FnBGe-P1.css', 'public/build/assets/app-CpXTcIz4.js'])
+        @vite(['build/assets/app-FnBGe-P1.css', 'build/assets/app-CpXTcIz4.js'])
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
